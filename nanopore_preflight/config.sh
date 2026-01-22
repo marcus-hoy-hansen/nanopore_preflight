@@ -19,7 +19,7 @@
 : "${NP_DORADO_TEST_MODEL:=fast}"          # lighter model for CPU/test runs
 : "${NP_DORADO_DEVICE:=cuda:all}"          # set to "cpu" for quick tests (submit with CPU partition)
 : "${NP_DORADO_TEST_LIMIT:=1000}"          # max reads to basecall when NP_DORADO_DEVICE=cpu or NP_DORADO_TEST_MODE=1
-: "${NP_DORADO_TEST_MODE:=1}"              # set to 1 to force CPU device and cap max reads for fast test runs
+: "${NP_DORADO_TEST_MODE:=0}"              # set to 1 to force CPU device and cap max reads for fast test runs
 
 # Conda settings used to reach samtools (and other CLI tools if needed).
 : "${NP_CONDA_PROFILE:=/home/$USER/miniforge3/etc/profile.d/conda.sh}"
